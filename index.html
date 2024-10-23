@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .container-fluid {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .content {
+            max-height: 400px;
+            overflow-y: scroll;
+            padding: 1rem;
+            width: 80%;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        h1 {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            z-index: 100;
+            background-color: white;
+            padding: 0 10px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BrandName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <h1>Bootstrap </h1>
+        <div class="content">
+            <p>
+                Bootstrap is a free and open-source front-end development framework for creating websites and web applications. It contains HTML, CSS, and JavaScript components for forms, buttons, navigation, and other interface components. Originally created by Twitter, Bootstrap helps developers build responsive, mobile-first projects on the web with ease. 
+                Bootstrap simplifies the development process by offering a grid system and pre-defined classes that are highly customizable. With its focus on responsive design, Bootstrap ensures that web content looks great on different screen sizes and devices. The grid system allows developers to layout elements in columns and rows, which automatically adjust based on the screen size. Bootstrap's component-based approach provides an extensive library of reusable components, such as dropdowns, modals, carousels, and alerts, that are easy to implement and integrate into projects.
+                Bootstrap has evolved over time, with its current version (Bootstrap 5) providing even more flexibility by removing jQuery dependencies and improving utilities for CSS. It embraces modern web standards like Flexbox for layout and provides better control over design elements. Developers can use Bootstrap's powerful customization tools to modify components and layouts without writing much CSS.
+                One of the key strengths of Bootstrap is its community. There are numerous resources, tutorials, and third-party themes available, which make it easy for new developers to start building professional websites quickly. Moreover, the framework is well-documented, offering comprehensive guidance on how to use and modify its features.
+                Bootstrap is not just limited to styling. It includes JavaScript plugins that can add interactivity and functionality to web applications. For example, with Bootstrap's JavaScript plugins, developers can create tooltips, popovers, and dynamic modals. These features enhance the user experience by adding polished interactions to the page.
+                In summary, Bootstrap's ease of use, flexibility, and powerful set of tools make it one of the most popular frameworks for front-end development. Whether you are creating a simple landing page or a complex web application, Bootstrap offers a solid foundation that will help you achieve your goals more efficiently.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+</body>
+</html>
